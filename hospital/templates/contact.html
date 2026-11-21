@@ -1,9 +1,57 @@
 {% extends 'navigation.html' %}
 {% load static %}
+
 {% block body %}
+<style>
+    .mydivstyle {
+        padding: 1.5rem 1rem;
+        border-radius: 0.75rem;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
 
+    .mydivstyle:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+        transform: translateY(-8px);
+    }
+</style>
 
-<div class="container" style="margin-top: 50px">
+<div class="container" style="margin-top: 50px;">
     <h2 class="text-center">Contact Us</h2>
+
+    <div class="row mt-5 text-center g-4">
+        <div class="col-lg-3 col-sm-6">
+            <div class="mydivstyle h-100">
+                <h4><i class="fa-solid fa-square-phone me-2"></i>Contact</h4>
+                <p class="mt-3 fw-bold">
+                    <a class="text-danger" href="tel:+254796728773">+254 796 728 773</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+            <div class="mydivstyle h-100">
+                <h4><i class="fa-solid fa-envelope me-2"></i>Send e-mail</h4>
+                <p class="mt-3 fw-bold">
+                    <a class="text-danger" href="mailto:mathewsonialaodoyo@gmail.com">mathewsonialaodoyo@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+            <div class="mydivstyle h-100">
+                <h4><i class="fa-solid fa-location-dot me-2"></i>Office Address</h4>
+                <p class="mt-3 fw-bold">
+                    <a class="text-danger" href="https://www.google.com/maps/dir//Kinyanjui+Primary+School/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x182f1a368f5cbf45:0x45bba6b00cd28805?sa=X&ved=1t:57443&ictx=111">Armour Tech</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6">
+            <div class="mydivstyle h-100">
+                <h4><i class="fa-solid fa-clock me-2"></i>Office Hours</h4>
+                <p class="mt-3 fw-bold text-danger">9:00 AM - 7:00 PM</p>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
